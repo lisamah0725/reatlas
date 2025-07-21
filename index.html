@@ -268,33 +268,77 @@
             line-height: 1.6;
         }
 
-    <section class="press" id="press">
-        <div class="container">
-            <h2 class="section-title fade-in">Featured Research</h2>
-            <p class="section-subtitle fade-in">Our research on Canada's mining waste opportunities has been featured in leading publications</p>
-            <div class="press-grid">
-                <div class="press-card fade-in">
-                    <div class="press-logo">📰</div>
-                    <h3>Canadian Mining Journal</h3>
-                    <p>"Research report highlights untapped use of mine tailings in Canada"</p>
-                    <a href="https://www.canadianminingjournal.com/news/research-report-highlights-untapped-use-of-mine-tailings-in-canada/" target="_blank" class="press-link">Read Article →</a>
-                </div>
-                <div class="press-card fade-in">
-                    <div class="press-logo">🌍</div>
-                    <h3>National Observer</h3>
-                    <p>"Toxic tailings could be critical minerals goldmine, researchers say"</p>
-                    <a href="https://www.nationalobserver.com/2025/03/18/news/toxic-tailings-critical-minerals" target="_blank" class="press-link">Read Article →</a>
-                </div>
-                <div class="press-card fade-in">
-                    <div class="press-logo">🇨🇦</div>
-                    <h3>Action Canada Fellowship</h3>
-                    <p>"Waste Not: Unlocking Critical and Strategic Mineral Opportunities in Canada's Tailings"</p>
-                    <a href="https://actioncanada.ca/publications/waste-not/" target="_blank" class="press-link">Read Report →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-        
+        /* Press Section */
+        .press {
+            padding: 5rem 0;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #aaaaaa;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .press-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .press-card {
+            padding: 2.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .press-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.1);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+
+        .press-logo {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .press-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .press-card p {
+            color: #aaaaaa;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .press-link {
+            color: #00d4ff;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .press-link:hover {
+            color: #00ff88;
+            transform: translateX(5px);
+        }
+
         /* CTA Section */
         .cta-section {
             padding: 5rem 0;
@@ -363,6 +407,12 @@
         <div class="container">
             <div class="nav-content">
                 <div class="logo">ReAtlas AI</div>
+                <ul class="nav-links">
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#press">Research</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -372,11 +422,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Unlocking <span class="highlight">$10B+</span> in<br>Mining Waste Value</h1>
-                <p>Transform Canada's 250M+ tons of annual tailings from liability into opportunity. Our AI-powered platform aims to identify critical minerals in abandoned mine sites, turning environmental challenges into economic wins.</p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary">Explore Opportunities</a>
-                    <a href="#about" class="btn btn-secondary">Learn More</a>
-                </div>
+                <p>Transform Canada's 250M+ tons of annual tailings from liability into opportunity. We are developing an AI-powered platform  to identify critical minerals in abandoned mine sites, turning environmental challenges into economic wins.</p>
             </div>
         </div>
     </section>
@@ -386,15 +432,15 @@
             <div class="stats-grid fade-in">
                 <div class="stat-card">
                     <div class="stat-number">$10B</div>
-                    <div class="stat-label">Canadian Mining Liability Alone</div>
+                    <div class="stat-label">Mining Liability in Canada Alone</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">250M</div>
                     <div class="stat-label">Tons of Tailings Annually</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">10,000+</div>
-                    <div class="stat-label">Orphaned Mine Sites</div>
+                    <div class="stat-number">13,000+</div>
+                    <div class="stat-label">Legacy Mine Sites in Canada Alone</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">$100B</div>
@@ -422,6 +468,34 @@
                     <div class="feature-icon">🌱</div>
                     <h3>Environmental Impact</h3>
                     <p>Reduce environmental liabilities while supporting Canada's net-zero goals through circular economy mining practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="press" id="press">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Research</h2>
+            <p class="section-subtitle fade-in">Our research on Canada's mining waste opportunities has been featured in leading publications</p>
+            <div class="press-grid">
+                <div class="press-card fade-in">
+                    <div class="press-logo">📰</div>
+                    <h3>Canadian Mining Journal</h3>
+                    <p>"Research report highlights untapped use of mine tailings in Canada"</p>
+                    <a href="https://www.canadianminingjournal.com/news/research-report-highlights-untapped-use-of-mine-tailings-in-canada/" target="_blank" class="press-link">Read Article →</a>
+                </div>
+                <div class="press-card fade-in">
+                    <div class="press-logo">🌍</div>
+                    <h3>National Observer</h3>
+                    <p>"Toxic tailings could be critical minerals goldmine, researchers say"</p>
+                    <a href="https://www.nationalobserver.com/2025/03/18/news/toxic-tailings-critical-minerals" target="_blank" class="press-link">Read Article →</a>
+                </div>
+                <div class="press-card fade-in">
+                    <div class="press-logo">🇨🇦</div>
+                    <h3>Action Canada Fellowship</h3>
+                    <p>"Waste Not: Unlocking Critical and Strategic Mineral Opportunities in Canada's Tailings"</p>
+                    <a href="https://actioncanada.ca/publications/waste-not/" target="_blank" class="press-link">Read Report →</a>
+                </div>
             </div>
         </div>
     </section>
@@ -429,7 +503,7 @@
     <section class="cta-section" id="contact">
         <div class="container fade-in">
             <h2>Interested in Learning More?</h2>
-            <p>Connect with ReAtlas AI at lisa@reatlas.org</p>
+            <p>Connect with ReAtlas AI at lisa@reatlas.org.</p>
         </div>
     </section>
 
